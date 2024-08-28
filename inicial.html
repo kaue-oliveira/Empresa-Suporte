@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho de BD</title>
+  <style>
+    :root {
+      --primary-color: #1C1F33;
+      --secondary-color: #162447;
+      --accent-color: #1F4068;
+      --button-hover-color: #1C1F55;
+      --text-color: #FFFFFF;
+      --button-text-color: #FFFFFF;
+      --button-hover-text-color: #FFFFFF;
+      --button-hover-border-color: #FFF200;
+    }
+    html, body {
+      overflow-x: hidden; /* PrevÃª a rolagem horizontal */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; /* Inclui padding e border na largura total */
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--primary-color);
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    header {
+      background-color: var(--secondary-color);
+      width: 100%;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+      font-weight: bold;
+    }
+    .logo {
+      max-width: 120px;
+      width: 100%;
+      height: auto;
+      margin-right: 1.5rem;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      width: 90%;
+      max-width: 400px;
+      margin-top: 2rem;
+    }
+    .button {
+      background-color: var(--accent-color);
+      border: 2px solid transparent;
+      color: var(--button-text-color);
+      font-size: 1.25rem;
+      padding: 1rem;
+      width: 100%;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        border-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: var(--button-hover-color);
+      color: var(--button-hover-text-color);
+      border-color: var(--button-hover-border-color);
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    .button:active {
+      transform: scale(0.95);
+    }
+    a {
+      width: 100%;
+    }
+    @media (max-width: 480px) {
+      header {
+        flex-direction: column;
+      }
+      .logo {
+        margin-right: 0;
+       }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="imagem.png" alt="Logo" class="logo">
+    <h1>Suporte Tech</h1>
+  </header>
+  <main>
+    <a href="http://localhost/Kaue/formulariobt.php" aria-label="Cadastrar">
+      <button class="button">Cadastrar</button>
+    </a>
+    <a href="http://localhost/Kaue/visualizar.php" aria-label="Visualizar">
+      <button class="button">Visualizar</button>
+    </a>
+    
+  </main>
+</body>
+</html>
